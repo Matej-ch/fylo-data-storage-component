@@ -40,6 +40,10 @@
     padding: 2rem;
     position: relative;
 
+    .arrow-left {
+      display: none;
+    }
+
     .progress-bar {
       progress {
         opacity: 0;
@@ -114,5 +118,35 @@
 }
 
 @media screen and (min-width: 40rem) {
+  .storage-component {
+    grid-template-columns: 1fr 2fr;
+    width: min(90%, 60rem);
 
+    .info {
+      align-self: end;
+
+      p {
+        text-align: left;
+      }
+
+      .arrow-left {
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid white;
+      }
+
+      .storage-left {
+        top: -4rem;
+        right: 0;
+        left: unset;
+        margin-right: 2rem;
+      }
+    }
+  }
 }

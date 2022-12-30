@@ -27,7 +27,10 @@ function FyloDataStorage({used, max}: { used: number, max: number }) {
             <p className={'start-end'}><span className={'font-bold'}>0&nbsp;GB</span><span
                 className={'font-bold'}>{max}&nbsp;GB</span></p>
 
-            <div className={'storage-left'}>{max - used}<span>&nbsp;&nbsp;GB left</span></div>
+            <div className={'storage-left'}>{max - used}<span>&nbsp;&nbsp;GB left</span>
+
+                <div className="arrow-left"></div>
+            </div>
         </div>
     </article>);
 }
