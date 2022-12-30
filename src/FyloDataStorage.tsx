@@ -8,7 +8,7 @@ import iconUploadSvg from './assets/icon-upload.svg';
 function FyloDataStorage({used, max}: { used: number, max: number }) {
     return (<article className={'storage-component'}>
         <header>
-            <h2 aria-label={'Heading with icon'}>
+            <h2>
                 <img src={iconLogoSvg} alt="Fylo logo"/>
             </h2>
 
