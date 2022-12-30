@@ -8,13 +8,15 @@ import iconUploadSvg from './assets/icon-upload.svg';
 function FyloDataStorage({used, max}: { used: number, max: number }) {
     return (<article className={'storage-component'}>
         <header>
-            <img src={iconLogoSvg} alt="fylo logo"/>
-            <div>
-                <button><img src={iconDocumentSvg} alt=""/></button>
-                <button><img src={iconFolderSvg} alt=""/></button>
-                <button><img src={iconUploadSvg} alt=""/></button>
-            </div>
+            <h2 aria-label={'Heading with icon'}>
+                <img src={iconLogoSvg} alt="Fylo logo"/>
+            </h2>
 
+            <div>
+                <button type='button'><img src={iconDocumentSvg} alt="Document icon"/></button>
+                <button type='button'><img src={iconFolderSvg} alt="Folder icon"/></button>
+                <button type='button'><img src={iconUploadSvg} alt="Upload icon"/></button>
+            </div>
         </header>
         <div className={'info'}>
             <p>You've used <span className={'font-bold'}>{used}&nbsp;GB</span> of your storage</p>
